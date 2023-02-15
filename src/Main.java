@@ -18,6 +18,15 @@ class ChessGame {
     JLabel pawnWhite6;
     JLabel pawnWhite7;
     JLabel pawnWhite8;
+    
+    JLabel pawnBlack1;
+    JLabel pawnBlack2;
+    JLabel pawnBlack3;
+    JLabel pawnBlack4;
+    JLabel pawnBlack5;
+    JLabel pawnBlack6;
+    JLabel pawnBlack7;
+    JLabel pawnBlack8;
     private static int[][] chessArr;
 
     private static HashMap<String, String> moveBoard;
@@ -73,17 +82,59 @@ class ChessGame {
         pawnWhite8.setIcon(new ImageIcon("src/pawn.png"));
         chessBoard.add(pawnWhite8);
 
+        pawnBlack1 = new JLabel();
+        pawnBlack1.setBounds(10, 95, 65, 65);
+        pawnBlack1.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack1);
+
+        pawnBlack2 = new JLabel();
+        pawnBlack2.setBounds(pawnBlack1.getX()+85, 95, 65, 65);
+        pawnBlack2.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack2);
+
+        pawnBlack3 = new JLabel();
+        pawnBlack3.setBounds(pawnBlack2.getX()+85, 95, 65, 65);
+        pawnBlack3.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack3);
+
+        pawnBlack4 = new JLabel();
+        pawnBlack4.setBounds(pawnBlack3.getX()+85, 95, 65, 65);
+        pawnBlack4.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack4);
+
+        pawnBlack5 = new JLabel();
+        pawnBlack5.setBounds(pawnBlack4.getX()+85, 95, 65, 65);
+        pawnBlack5.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack5);
+
+        pawnBlack6 = new JLabel();
+        pawnBlack6.setBounds(pawnBlack5.getX()+85, 95, 65, 65);
+        pawnBlack6.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack6);
+
+        pawnBlack7 = new JLabel();
+        pawnBlack7.setBounds(pawnBlack6.getX()+85, 95, 65, 65);
+        pawnBlack7.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack7);
+
+        pawnBlack8 = new JLabel();
+        pawnBlack8.setBounds(pawnBlack7.getX()+85, 95, 65, 65);
+        pawnBlack8.setIcon(new ImageIcon("src/pawnBlack.png"));
+        chessBoard.add(pawnBlack8);
+
+
+
         chessArr = new int[8][8];
 
         moveBoard = new HashMap<>();
 
         fillMoveBoard();
 
-        printBoard();
+        //printBoard();
 
         fillBoard();
 
-        printBoard();
+        //printBoard();
 
         frame.setVisible(true);
     }
